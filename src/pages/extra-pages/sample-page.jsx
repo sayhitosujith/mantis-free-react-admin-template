@@ -1,5 +1,4 @@
 // material-ui
-import Typography from '@mui/material/Typography';
 
 // project import
 import MainCard from 'components/MainCard';
@@ -9,12 +8,11 @@ import MainCard from 'components/MainCard';
 export default function SamplePage() {
   return (
     <MainCard title="Sample Card">
-      <Typography variant="body2">
-        Lorem ipsum dolor sit amen, consenter nipissing eli, sed do elusion tempos incident ut laborers et doolie magna alissa. Ut enif ad
-        minim venice, quin nostrum exercitation illampu laborings nisi ut liquid ex ea commons construal. Duos aube grue dolor in
-        reprehended in voltage veil esse colum doolie eu fujian bulla parian. Exceptive sin ocean cuspidate non president, sunk in culpa qui
-        officiate descent molls anim id est labours.
-      </Typography>
+    <img
+      className="h-96 w-full rounded-lg object-cover object-center"
+      src="https://w0.peakpx.com/wallpaper/330/440/HD-wallpaper-wood-house-architecture-cozy-houses-interior-love-four-seasons-home-attractions-in-dreams-living-exterior-garden-beautiful-houses-wood.jpg"
+      alt="nature img"
+    />
     </MainCard>
   );
 }

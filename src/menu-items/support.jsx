@@ -16,7 +16,7 @@ const support = {
   children: [
     {
       id: 'sample-page',
-      title: 'Sample Page',
+      title: 'Welcome to Prop door',
       type: 'item',
       url: '/sample-page',
       icon: icons.ChromeOutlined

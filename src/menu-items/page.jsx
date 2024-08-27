@@ -33,7 +33,7 @@ const pages = {
       target: true
     },
     {
-      id: 'login1',
+      id: 'login',
       title: 'Logout',
       type: 'item',
       url: '/login',

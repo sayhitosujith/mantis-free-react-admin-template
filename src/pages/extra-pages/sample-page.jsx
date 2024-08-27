@@ -8,7 +8,8 @@ import MainCard from 'components/MainCard';
 export default function SamplePage() {
   return (
     <MainCard title="Experience the Pinnacle of Custom Timber & Log Home Design
-">
+"><button onClick={() => window.location.reload(true)}>Refresh page </button>
+
     <img
           className="h-96 w-full rounded-lg object-cover object-center"
  style={{width: '100%', height: '100vh'}}

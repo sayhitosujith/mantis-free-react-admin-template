@@ -171,7 +171,7 @@ export default function SalesChart() {
             <Typography variant="h6" color="secondary">
               Net Profit
             </Typography>
-            <Typography variant="h4">24,50,000/-</Typography>
+            <Typography variant="h4">24,55,50,000/-</Typography>
           </Stack>
           <FormControl component="fieldset">
             <FormGroup row>

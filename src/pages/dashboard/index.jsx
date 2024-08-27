@@ -236,7 +236,7 @@ export default function DashboardDefault() {
               </Grid>
             </Grid>
             <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
-              Need Help?
+              Talk to Customer care
             </Button>
           </Stack>
         </MainCard>

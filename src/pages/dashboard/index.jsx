@@ -125,10 +125,11 @@ export default function DashboardDefault() {
               <ListItemText primary="Company Expenses Ratio" />
               <Typography variant="h5">0.58%</Typography>
             </ListItemButton>
-            <ListItemButton>
-              <ListItemText primary="Business Risk Cases" />
+            <ListItemButton divider>
+              <ListItemText primary="Business Risk" />
               <Typography variant="h5">Low</Typography>
             </ListItemButton>
+            
           </List>
           <ReportAreaChart />
         </MainCard>

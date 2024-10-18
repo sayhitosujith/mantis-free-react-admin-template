@@ -35,10 +35,17 @@ export default function SamplePage() {
 
     <img
           className="h-96 w-full rounded-lg object-cover object-center"
- style={{width: '100%', height: '100vh'}}
-      src="https://wallpapercave.com/wp/wp6256726.jpg"
+ style={{width: '50%', height: '50vh'}}
+      src="https://5.imimg.com/data5/ANDROID/Default/2022/5/YE/DH/JZ/151632916/product-jpeg.jpg"
       alt="Experience the Pinnacle of Custom Timber & Log Home Design  "
     />
+        <img
+          className="h-96 w-full rounded-lg object-cover object-center"
+ style={{width: '50%', height: '50vh'}}
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLyyUe3G6Lt7lX-bTw7UVnxH-r1F2umrzog&s"
+      alt="Experience the Pinnacle of Custom Timber & Log Home Design  "
+    />
+
         <MainCard title="CONTACT US">
 <Formik
         initialValues={{
@@ -166,6 +173,7 @@ export default function SamplePage() {
                 <AnimateButton>
                   <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
                   CONTACT US
+
                   </Button>
                 </AnimateButton>
               </Grid>
@@ -174,7 +182,6 @@ export default function SamplePage() {
         )}
       </Formik>
 </MainCard>
-
     </MainCard>
   );
 }

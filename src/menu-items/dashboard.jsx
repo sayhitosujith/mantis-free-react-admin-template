@@ -26,7 +26,7 @@ const dashboard = {
       id: 'Bookings',
       title: 'Bookings',
       type: 'item',
-      url: '/Bookings',
+      url: '/register',
       icon: icons.ProfileOutlined,
       breadcrumbs: false
     }

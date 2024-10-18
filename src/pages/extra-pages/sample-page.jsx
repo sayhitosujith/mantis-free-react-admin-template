@@ -30,21 +30,14 @@ export default function SamplePage() {
 
   return (
     <MainCard title="
-    You dream, we build your Wooden villas🏘️
-">
-
-    <img
-          className="h-96 w-full rounded-lg object-cover object-center"
- style={{width: '50%', height: '50vh'}}
-      src="https://5.imimg.com/data5/ANDROID/Default/2022/5/YE/DH/JZ/151632916/product-jpeg.jpg"
-      alt="Experience the Pinnacle of Custom Timber & Log Home Design  "
-    />
-        <img
-          className="h-96 w-full rounded-lg object-cover object-center"
- style={{width: '50%', height: '50vh'}}
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLyyUe3G6Lt7lX-bTw7UVnxH-r1F2umrzog&s"
-      alt="Experience the Pinnacle of Custom Timber & Log Home Design  "
-    />
+    You dream, we build your Wooden villas🏘️">
+  <i><b>
+    Enjoy the sun, sand, and splendour of our beachfront villas, many offering direct access to the shoreline and the perfect backdrop for your leisure getaway.
+    </b> </i>
+    <video className="h-full w-full rounded-lg" controls autoPlay muted>
+      <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
         <MainCard title="CONTACT US">
 <Formik
@@ -128,6 +121,7 @@ export default function SamplePage() {
                   </FormHelperText>
                 )}
               </Grid>
+             
               <Grid item xs={12}>
                 <Stack spacing={1}>
                   <InputLabel htmlFor="email-signup">Email Address*</InputLabel>
@@ -151,31 +145,39 @@ export default function SamplePage() {
                 )}
               </Grid>
             
-                   
               <Grid item xs={12}>
-                <Typography variant="body2">
-                  By Signing up, you agree to our &nbsp;
-                  <Link variant="subtitle2" component={RouterLink} to="#">
-                    Terms of Service
-                  </Link>
-                  &nbsp; and &nbsp;
-                  <Link variant="subtitle2" component={RouterLink} to="#">
-                    Privacy Policy
-                  </Link>
-                </Typography>
+                <Stack spacing={1}>
+                  <InputLabel htmlFor="Phone Number-signup">Phone Number*</InputLabel>
+                  <OutlinedInput
+                    fullWidth
+                    error={Boolean(touched.PhoneNumber && errors.PhoneNumber)}
+                    id="Phone Number"
+                    type="Phone Number"
+                    value={values.PhoneNumber}
+                    name="Phone Number"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    placeholder="Enter 10 digit Phone Number"
+                    inputProps={{}}
+                  />
+                </Stack>
+                {touched.PhoneNumber && errors.PhoneNumber && (
+                  <FormHelperText error id="helper-text-Phone Number-signup">
+                    {errors.PhoneNumber}
+                  </FormHelperText>
+                )}
               </Grid>
-              {errors.submit && (
-                <Grid item xs={12}>
-                  <FormHelperText error>{errors.submit}</FormHelperText>
-                </Grid>
-              )}
+          
               <Grid item xs={12}>
                 <AnimateButton>
                   <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
-                  CONTACT US
-
+                  SEND YOUR QUERY
                   </Button>
                 </AnimateButton>
+                <Typography variant="body2">
+                 Thankyou for contacting us. Our contact center representative will get back to you shortly
+                 
+                </Typography>
               </Grid>
             </Grid>
           </form>

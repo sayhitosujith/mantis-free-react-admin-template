@@ -11,7 +11,7 @@ const icons = {
 
 const dashboard = {
   id: 'group-dashboard',
-  title: 'Prop Door | ADMIN',
+  title: 'Naukri Updater | ADMIN',
   type: 'group',
   children: [
     {

@@ -1,9 +1,6 @@
+/* eslint-disable prettier/prettier */
 // material-ui
-import FormControl from '@mui/material/FormControl';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import { Link as RouterLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
 // project import
@@ -14,25 +11,27 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import { useEffect, useState } from 'react';
-import InputAdornment from '@mui/material/InputAdornment';
-import IconButton from '@mui/material/IconButton';
-// assets
-import EyeOutlined from '@ant-design/icons/EyeOutlined';
-import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined';
+
 // project import
 import AnimateButton from 'components/@extended/AnimateButton';
 // ==============================|| SAMPLE PAGE ||============================== //
 
 export default function SamplePage() {
-  const [level, setLevel] = useState();
 
 
   return (
     <MainCard title="
-    You dream, we build your Wooden villas🏘️">
+    Are you looking our for a Job..We can help you .">
+
+ <div>
+  <a href="https://github.com/sayhitosujith/BDD_UI" target="_blank" rel="noopener noreferrer">
+  <button>Git hub Repo</button>
+  </a>
+  </div>
+  
   <i><b>
-    Enjoy the sun, sand, and splendour of our beachfront villas, many offering direct access to the shoreline and the perfect backdrop for your leisure getaway.
+  Just Register with us to grab your Dream job.
+ 
     </b> </i>
     <video className="h-full w-full rounded-lg" controls autoPlay muted>
       <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />

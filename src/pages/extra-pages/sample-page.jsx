@@ -22,18 +22,9 @@ export default function SamplePage() {
 
 
   return (
-    <MainCard title="
-    A man who dares to waste one hour of time has not discovered the value of life.
-- Charles Darwin .">
-
- <div>
-  </div>
-  <Grid item xs={6} sm={2} md={45} lg={1}>
-        <AnalyticEcommerce title="Total Resgistered USers" count="4" percentage={59.3} extra="35,000" />
-      </Grid>
-      
+    <MainCard title="A man who dares to waste one hour of time has not discovered the value of life.">
   <i><b>
-  Just Register with us to grab your Dream job.
+  - Charles Darwin.
     </b> </i>
   
 
@@ -169,19 +160,26 @@ export default function SamplePage() {
               <Grid item xs={12}>
                 <AnimateButton>
                   <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
-                  SEND YOUR QUERY
+                  REGISTER
                   </Button>
                 </AnimateButton>
                 <Typography variant="body2">
                  Thankyou for contacting us. Our contact center representative will get back to you shortly
                  
                 </Typography>
+
               </Grid>
             </Grid>
           </form>
         )}
       </Formik>
 </MainCard>
+<div>
+  <br></br>
+  <Grid item xs={6} sm={2} md={45} lg={1}>
+        <AnalyticEcommerce title="Total Registered Users" count="453" percentage={59.3} extra="35,000" />
+      </Grid>
+      </div>
     </MainCard>
   );
 }

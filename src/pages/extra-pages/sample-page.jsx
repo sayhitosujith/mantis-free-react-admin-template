@@ -11,7 +11,9 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
-
+import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';<Grid item xs={12} sm={6} md={4} lg={3}>
+<AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
+</Grid>
 // project import
 import AnimateButton from 'components/@extended/AnimateButton';
 // ==============================|| SAMPLE PAGE ||============================== //
@@ -21,22 +23,19 @@ export default function SamplePage() {
 
   return (
     <MainCard title="
-    Are you looking our for a Job..We can help you .">
+    A man who dares to waste one hour of time has not discovered the value of life.
+- Charles Darwin .">
 
  <div>
-  <a href="https://github.com/sayhitosujith/BDD_UI" target="_blank" rel="noopener noreferrer">
-  <button>Git hub Repo</button>
-  </a>
   </div>
-  
+  <Grid item xs={6} sm={2} md={45} lg={1}>
+        <AnalyticEcommerce title="Total Resgistered USers" count="4" percentage={59.3} extra="35,000" />
+      </Grid>
+      
   <i><b>
   Just Register with us to grab your Dream job.
- 
     </b> </i>
-    <video className="h-full w-full rounded-lg" controls autoPlay muted>
-      <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  
 
         <MainCard title="CONTACT US">
 <Formik

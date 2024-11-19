@@ -16,7 +16,7 @@ const support = {
   children: [
     {
       id: 'sample-page',
-      title: 'Mantis - Naukri Auto Updater',
+      title: 'Contact Us',
       type: 'item',
       url: '/sample-page',
       icon: icons.ChromeOutlined

@@ -24,10 +24,11 @@ export default function SamplePage() {
   return (
     <MainCard title="A man who dares to waste one hour of time has not discovered the value of life.">
   <i><b>
-  - Charles Darwin.
+  - Run Your profile .
     </b> </i>
-  
-
+  <br></br>
+    <button onClick={() => window.location.reload(true)}>Build Now </button>
+    <br></br>
         <MainCard title="CONTACT US">
 <Formik
         initialValues={{

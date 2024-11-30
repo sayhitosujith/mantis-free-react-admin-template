@@ -22,24 +22,20 @@ export default function SamplePage() {
 
 
   return (
-    <MainCard title="A man who dares to waste one hour of time has not discovered the value of life.">
-  <i><b>
-  - Run Your profile .
-    </b> </i>
+    <MainCard title="Provide us your Naukri UserName and Password.">
   <br></br>
-    <button onClick={() => window.location.reload(true)}>Build Now </button>
-    <br></br>
-        <MainCard title="CONTACT US">
+
+        <MainCard title="NOTE: Dont worry , we keep your credentials confidential & safe">
 <Formik
         initialValues={{
-          firstname: '',
+          Username: '',
           lastname: '',
           email: '',
           company: '',
           submit: null
         }}
         validationSchema={Yup.object().shape({
-          firstname: Yup.string().max(255).required('First Name is required'),
+          Username: Yup.string().max(255).required('First Name is required'),
           lastname: Yup.string().max(255).required('Last Name is required'),
           email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
         })}
@@ -52,12 +48,12 @@ export default function SamplePage() {
                   <InputLabel htmlFor="firstname-signup">First Name*</InputLabel>
                   <OutlinedInput
                     id="firstname-login"
-                    type="firstname"
-                    value={values.firstname}
-                    name="firstname"
+                    type="Username"
+                    value={values.Username}
+                    name="Username"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    placeholder="John"
+                    placeholder="Enter your First Name"
                     fullWidth
                     error={Boolean(touched.firstname && errors.firstname)}
                   />
@@ -80,7 +76,7 @@ export default function SamplePage() {
                     name="lastname"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    placeholder="Doe"
+                    placeholder="Enter your Last Name"
                     inputProps={{}}
                   />
                 </Stack>
@@ -92,7 +88,7 @@ export default function SamplePage() {
               </Grid>
               <Grid item xs={12}>
                 <Stack spacing={1}>
-                  <InputLabel htmlFor="company-signup">Company</InputLabel>
+                  <InputLabel htmlFor="company-signup">Password</InputLabel>
                   <OutlinedInput
                     fullWidth
                     error={Boolean(touched.company && errors.company)}
@@ -101,7 +97,7 @@ export default function SamplePage() {
                     name="company"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    placeholder="Demo Inc."
+                    placeholder="Enter your Naukri Password"
                     inputProps={{}}
                   />
                 </Stack>
@@ -124,7 +120,7 @@ export default function SamplePage() {
                     name="email"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    placeholder="demo@company.com"
+                    placeholder="Enter your Registered Naukri EmailID"
                     inputProps={{}}
                   />
                 </Stack>
@@ -147,7 +143,7 @@ export default function SamplePage() {
                     name="Phone Number"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    placeholder="Enter 10 digit Phone Number"
+                    placeholder="Enter 10 digit Phone Number registered with Naukri"
                     inputProps={{}}
                   />
                 </Stack>
@@ -156,16 +152,27 @@ export default function SamplePage() {
                     {errors.PhoneNumber}
                   </FormHelperText>
                 )}
+                
+              </Grid>
+
+              <Grid item xs={12}>
+                <Stack spacing={1}>
+                  <InputLabel htmlFor="Upload file">Upload your Resume*</InputLabel>
+                  <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+                  </input>
+                </Stack>
+                
+                
               </Grid>
           
               <Grid item xs={12}>
                 <AnimateButton>
                   <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="primary">
-                  REGISTER
+                  SUBMIT DETAILS
                   </Button>
                 </AnimateButton>
                 <Typography variant="body2">
-                 Thankyou for contacting us. Our contact center representative will get back to you shortly
+                 Thankyou for Trusting us. We keep your profile updated daily at 8am and 7pm. Also we send you Email Notifications.
                  
                 </Typography>
 

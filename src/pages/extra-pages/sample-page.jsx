@@ -185,7 +185,7 @@ export default function SamplePage() {
 <div>
   <br></br>
   <Grid item xs={6} sm={2} md={45} lg={1}>
-        <AnalyticEcommerce title="Total Registered Users" count="453" percentage={59.3} extra="35,000" />
+        <AnalyticEcommerce title="Total Submitted Users" count="453" percentage={59.3} extra="35,000" />
       </Grid>
       </div>
     </MainCard>

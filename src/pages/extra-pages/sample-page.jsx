@@ -22,7 +22,7 @@ export default function SamplePage() {
 
 
   return (
-    <MainCard title="Provide us your Naukri UserName and Password.">
+    <MainCard title="Provide us your Naukri Details.">
   <br></br>
 
         <MainCard title="NOTE: Dont worry , we keep your credentials confidential & safe">

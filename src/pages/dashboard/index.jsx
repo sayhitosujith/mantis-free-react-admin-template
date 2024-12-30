@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import React from 'react';
 // project import
 import MainCard from 'components/MainCard';
 import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
@@ -46,6 +46,23 @@ const actionSX = {
   alignSelf: 'flex-start',
   transform: 'none'
 };
+const currentHour = new Date().getHours(); // Get the current hour (0-23)
+  
+let greeting = '';
+
+if (currentHour < 10) {
+  greeting = 'Hello,Good Morning';
+} else if (currentHour < 13) {
+  greeting = 'Hello,Good Afternoon';
+} else if (currentHour < 17) {
+  greeting = 'Hello,Good Evening';
+}
+else {
+  greeting = 'Hello,Good Night';
+}
+console.log('Current Hour:', currentHour); // Debugging log
+console.log('Greeting:', greeting); // Debugging log
+
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 
@@ -55,7 +72,7 @@ export default function DashboardDefault() {
 
       {/* row 1 */}
       <Grid item xs={12} sx={{ mb: -2.25 }}>
-        <Typography variant="h5">Dashboard</Typography>
+        <Typography variant="h5">{greeting}</Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />

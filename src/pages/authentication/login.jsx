@@ -4,12 +4,28 @@ import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
+import React from 'react';
 // project import
 import AuthWrapper from './AuthWrapper';
 import AuthLogin from './auth-forms/AuthLogin';
 
 // ================================|| LOGIN ||================================ //
+const currentHour = new Date().getHours(); // Get the current hour (0-23)
+let greeting = '';
+
+if (currentHour < 10) {
+  greeting = 'Hello,Good Morning';
+} else if (currentHour < 13) {
+  greeting = 'Hello,Good Afternoon';
+} else if (currentHour < 17) {
+  greeting = 'Hello,Good Evening';
+}
+else {
+  greeting = 'Hello,Good Night';
+}
+console.log('Current Hour:', currentHour); // Debugging log
+console.log('Greeting:', greeting); // Debugging log
+
 
 export default function Login() {
   return (
@@ -17,7 +33,7 @@ export default function Login() {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mb: { xs: -0.5, sm: 0.5 } }}>
-            <Typography variant="h3"> Make My Cottage</Typography>
+            <Typography variant="h3"> {greeting} </Typography>
             <Typography component={Link} to="/register" variant="body1" sx={{ textDecoration: 'none' }} color="primary">
               Don&apos;t have an account?
             </Typography>

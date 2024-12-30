@@ -47,7 +47,6 @@ const actionSX = {
   transform: 'none'
 };
 const currentHour = new Date().getHours(); // Get the current hour (0-23)
-  
 let greeting = '';
 
 if (currentHour < 10) {

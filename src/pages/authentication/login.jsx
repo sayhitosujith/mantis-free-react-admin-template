@@ -14,14 +14,14 @@ const currentHour = new Date().getHours(); // Get the current hour (0-23)
 let greeting = '';
 
 if (currentHour < 10) {
-  greeting = 'Hello,Good Morning';
-} else if (currentHour < 13) {
-  greeting = 'Hello,Good Afternoon';
-} else if (currentHour < 17) {
-  greeting = 'Hello,Good Evening';
+  greeting = 'Good Morning';
+} else if (currentHour < 16) {
+  greeting = 'Good Afternoon';
+} else if (currentHour < 18) {
+  greeting = 'Good Evening';
 }
 else {
-  greeting = 'Hello,Good Night';
+  greeting = 'Good Night';
 }
 console.log('Current Hour:', currentHour); // Debugging log
 console.log('Greeting:', greeting); // Debugging log

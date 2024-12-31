@@ -50,14 +50,14 @@ const currentHour = new Date().getHours(); // Get the current hour (0-23)
 let greeting = '';
 
 if (currentHour < 10) {
-  greeting = 'Good Morning';
+  greeting = 'Hello, Good Morning';
 } else if (currentHour < 16) {
-  greeting = 'Good Afternoon';
+  greeting = 'Hello, Good Afternoon';
 } else if (currentHour < 18) {
-  greeting = 'Good Evening';
+  greeting = 'Hello, Good Evening';
 }
 else {
-  greeting = 'Good Night';
+  greeting = 'Hello, Good Night';
 }
 console.log('Current Hour:', currentHour); // Debugging log
 console.log('Greeting:', greeting); // Debugging log
@@ -71,7 +71,9 @@ export default function DashboardDefault() {
 
       {/* row 1 */}
       <Grid item xs={12} sx={{ mb: -2.25 }}>
-        <Typography variant="h5">{greeting}</Typography>
+        <Typography variant="h5">Dashboard</Typography>
+        <br></br>
+        {greeting}
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />

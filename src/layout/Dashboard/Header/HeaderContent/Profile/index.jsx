@@ -129,7 +129,7 @@ export default function Profile() {
                               CEO at Mantis
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                              Mobile - 9480860587
+                              sujithreddy1991@gmail.com
                             </Typography>
                           </Stack>
                         </Stack>

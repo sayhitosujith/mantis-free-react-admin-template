@@ -20,6 +20,11 @@ import ReportAreaChart from './ReportAreaChart';
 import UniqueVisitorCard from './UniqueVisitorCard';
 import SaleReportCard from './SaleReportCard';
 import OrdersTable from './OrdersTable';
+import { FcShare } from "react-icons/fc";
+import { FaPhoneAlt, FaPhoneSlash } from "react-icons/fa";
+import { HiMiniMicrophone } from "react-icons/hi2";
+import { TbMicrophoneOff } from "react-icons/tb";
+
 
 // assets
 import GiftOutlined from '@ant-design/icons/GiftOutlined';
@@ -29,6 +34,10 @@ import avatar1 from 'assets/images/users/avatar-1.png';
 import avatar2 from 'assets/images/users/avatar-2.png';
 import avatar3 from 'assets/images/users/avatar-3.png';
 import avatar4 from 'assets/images/users/avatar-4.png';
+import { FcAssistant } from "react-icons/fc";
+import { IoMdDownload } from "react-icons/io";
+import { FcPrint } from "react-icons/fc";
+
 
 // avatar style
 const avatarSX = {
@@ -76,7 +85,9 @@ export default function DashboardDefault() {
         {greeting}
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
+        <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000">
+          <FcShare size={24} className="absolute top-2 right-9 text-gray-500 cursor-pointer hover:text-gray-700" />
+        </AnalyticEcommerce>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
@@ -99,13 +110,17 @@ export default function DashboardDefault() {
           <Grid item>
             <Typography variant="h5">Income Overview</Typography>
           </Grid>
+          <FcShare size={24} className="absolute top-2 right-9 text-gray-500 cursor-pointer hover:text-gray-700" />
+          <IoMdDownload size={24}className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />
+           <FcPrint size={24} /> 
           <Grid item />
         </Grid>
         <MainCard sx={{ mt: 2 }} content={false}>
           <Box sx={{ p: 3, pb: 0 }}>
             <Stack spacing={2}>
-              <Typography variant="h6" color="text.secondary">
+              <Typography variant="h6" color="text.secondary"> 
                 This Week Statistics
+            
               </Typography>
               <Typography variant="h3">$7,650</Typography>
             </Stack>
@@ -256,8 +271,15 @@ export default function DashboardDefault() {
               </Grid>
             </Grid>
             <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
-              Talk to Customer care
-            </Button>
+            <div style={{ textAlign: "center", fontSize: "14px" }}>
+      <FcAssistant size={50} />
+      <p>Talk to Customer care</p>
+      <FaPhoneAlt size={20} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <HiMiniMicrophone  size={20} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <TbMicrophoneOff size={20}/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <FaPhoneSlash size={20} />
+
+    </div></Button>
           </Stack>
         </MainCard>
       </Grid>

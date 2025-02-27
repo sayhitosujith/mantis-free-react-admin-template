@@ -26,7 +26,7 @@ export default function HeaderContent() {
       {downLG && <Box sx={{ width: '100%', ml: 1 }} />}
       <IconButton>
       <mat-icon  onClick={() => window.location.reload(true)}>
-      <IoIosRefresh size={18} color="black" /> 
+      <IoIosRefresh size={18} color="red" /> 
          </mat-icon>
       </IconButton>
       <IconButton

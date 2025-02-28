@@ -11,7 +11,13 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';<Grid item xs={12} sm={6} md={4} lg={3}>
+import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
+import { FcPrint } from "react-icons/fc";
+import { FcShare } from "react-icons/fc";
+import { IoMdDownload } from "react-icons/io";
+
+<Grid item xs={12} sm={6} md={4} lg={3}>
+
 <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
 </Grid>
 // project import
@@ -23,8 +29,10 @@ export default function SamplePage() {
 
   return (
     <MainCard title="Provide us your Naukri Details.">
-  <br></br>
-
+      
+      <FcShare size={24} className="absolute top-2 right-9 text-gray-500 cursor-pointer hover:text-gray-700" />&nbsp;&nbsp;
+                <IoMdDownload size={24} className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />&nbsp;&nbsp;
+                <FcPrint size={24} />
         <MainCard title="NOTE: Dont worry , we keep your credentials confidential & safe">
 <Formik
         initialValues={{

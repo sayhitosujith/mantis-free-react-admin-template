@@ -21,7 +21,7 @@ import UniqueVisitorCard from './UniqueVisitorCard';
 import SaleReportCard from './SaleReportCard';
 import OrdersTable from './OrdersTable';
 import { FcShare } from "react-icons/fc";
-import { FaPhoneAlt, FaPhoneSlash } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { HiMiniMicrophone } from "react-icons/hi2";
 import { TbMicrophoneOff } from "react-icons/tb";
 

@@ -22,7 +22,7 @@ export default function NavCard() {
         <Stack alignItems="center">
           <Typography variant="h5">Mantis Pro</Typography>
           <Typography variant="h6" color="secondary">
-            Checkout pro features
+            Coming Soon
           </Typography>
         </Stack>
         <AnimateButton>

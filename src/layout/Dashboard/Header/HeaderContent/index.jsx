@@ -9,7 +9,7 @@ import Search from './Search';
 import Profile from './Profile';
 import Notification from './Notification';
 import MobileSection from './MobileSection';
-import { IoIosRefresh } from "react-icons/io";
+import { LuRefreshCcw } from "react-icons/lu";
 
 
 // project import
@@ -26,9 +26,9 @@ export default function HeaderContent() {
       {downLG && <Box sx={{ width: '100%', ml: 1 }} />}
       <IconButton>
       <mat-icon  onClick={() => window.location.reload(true)}>
-      <IoIosRefresh size={18} color="red" /> 
+      <LuRefreshCcw  size={18} color="black" /> 
          </mat-icon>
-      </IconButton>
+      </IconButton><span></span>
       <IconButton
         component={Link}
         href="https://github.com/sayhitosujith/BDD_UI"

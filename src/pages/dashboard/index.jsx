@@ -276,9 +276,8 @@ export default function DashboardDefault() {
       <p>Talk to Customer care</p>
       <FaPhoneAlt size={20} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <HiMiniMicrophone  size={20} /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <TbMicrophoneOff size={20}/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <FaPhoneSlash size={20} />
-
+      <TbMicrophoneOff size={20}/>
+      
     </div></Button>
           </Stack>
         </MainCard>

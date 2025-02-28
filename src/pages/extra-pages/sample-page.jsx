@@ -15,6 +15,11 @@ import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
 import { FcPrint } from "react-icons/fc";
 import { FcShare } from "react-icons/fc";
 import { IoMdDownload } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { TfiTwitterAlt } from "react-icons/tfi";
+import { FiInstagram } from "react-icons/fi";
+
 
 <Grid item xs={12} sm={6} md={4} lg={3}>
 
@@ -30,8 +35,8 @@ export default function SamplePage() {
   return (
     <MainCard title="Provide us your Naukri Details.">
       
+      <IoMdDownload size={24} className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />&nbsp;&nbsp;
       <FcShare size={24} className="absolute top-2 right-9 text-gray-500 cursor-pointer hover:text-gray-700" />&nbsp;&nbsp;
-                <IoMdDownload size={24} className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />&nbsp;&nbsp;
                 <FcPrint size={24} />
         <MainCard title="NOTE: Dont worry , we keep your credentials confidential & safe">
 <Formik
@@ -181,7 +186,13 @@ export default function SamplePage() {
                 </AnimateButton>
                 <Typography variant="body2">
                  Thankyou for Trusting us. We keep your profile updated daily at 8am and 7pm. Also we send you Email Notifications.
-                 
+                 <div>
+      <IoLogoLinkedin size={30} color="#0077B5" /> <span></span>
+      <FaSquareFacebook size={30} color="#21b500" /> <span></span>
+      <TfiTwitterAlt size={30} color="#0cf7f3" /> <span></span>
+      <FiInstagram  size={30} color="#ed0216" /> <span></span>
+
+    </div>
                 </Typography>
 
               </Grid>
@@ -196,6 +207,7 @@ export default function SamplePage() {
         <AnalyticEcommerce title="Total Submitted Users" count="453" percentage={59.3} extra="35,000" />
       </Grid>
       </div>
+      
     </MainCard>
   );
 }

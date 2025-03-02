@@ -37,6 +37,12 @@ import avatar4 from 'assets/images/users/avatar-4.png';
 import { FcAssistant } from "react-icons/fc";
 import { IoMdDownload } from "react-icons/io";
 import { FcPrint } from "react-icons/fc";
+import { TbLayoutDashboardFilled } from "react-icons/tb";
+import { IoEyeSharp } from "react-icons/io5";
+import { FaUsersViewfinder } from "react-icons/fa6";
+import { FaUsersRays } from "react-icons/fa6";
+import { FaSalesforce } from "react-icons/fa";
+import { FcComboChart } from "react-icons/fc";
 
 
 // avatar style
@@ -80,23 +86,28 @@ export default function DashboardDefault() {
 
       {/* row 1 */}
       <Grid item xs={12} sx={{ mb: -2.25 }}>
-        <Typography variant="h5">Dashboard</Typography>
+
+        <Typography variant="h5">   <TbLayoutDashboardFilled />Dashboard</Typography>
         <br></br>
         {greeting}
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000">
+      <IoEyeSharp size={25} color="black"/>
+      <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000">
           <FcShare size={24} className="absolute top-2 right-9 text-gray-500 cursor-pointer hover:text-gray-700" />
         </AnalyticEcommerce>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
+      <FaUsersViewfinder size={25} color="green"/>
         <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Profile Updated" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />
+      <FaUsersRays size={25} color="orange"/>
+      <AnalyticEcommerce title="Total Profile Updated" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />
+      <FaSalesforce size={28} color="blue"/>
+      <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />
       </Grid>
 
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />

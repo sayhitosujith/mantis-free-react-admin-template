@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 // project import
 import MainCard from 'components/MainCard';
 import IncomeAreaChart from './IncomeAreaChart';
+import { FcComboChart } from "react-icons/fc";
 
 // ==============================|| DEFAULT - UNIQUE VISITOR ||============================== //
 
@@ -20,7 +21,9 @@ export default function UniqueVisitorCard() {
     <>
       <Grid container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Typography variant="h5">Unique profiles Updated</Typography>
+          <Typography variant="h5"> Unique profiles Updated <FcComboChart size={25} color="black"/>
+          </Typography>
+
         </Grid>
         <Grid item>
           <Stack direction="row" alignItems="center" spacing={0}>

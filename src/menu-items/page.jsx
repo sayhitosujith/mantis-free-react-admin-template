@@ -1,5 +1,7 @@
 // assets
 import { LoginOutlined, ProfileOutlined , LogoutOutlined } from '@ant-design/icons';
+import { IoSettingsOutline } from "react-icons/io5";
+
 
 // icons
 const icons = {
@@ -21,7 +23,7 @@ const pages = {
       title: 'Customer Login',
       type: 'item',
       url: '/login',
-      icon: icons.LogoutOutlined,
+      icon: icons.LoginOutlined,
       target: true
     },
     {
@@ -37,7 +39,7 @@ const pages = {
       title: 'Logout',
       type: 'item',
       url: '/login',
-      icon: icons.LoginOutlined,
+      icon: icons.LogoutOutlined,
       target: true
     }
   ]

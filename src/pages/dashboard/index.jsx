@@ -38,11 +38,10 @@ import { FcAssistant } from "react-icons/fc";
 import { IoMdDownload } from "react-icons/io";
 import { FcPrint } from "react-icons/fc";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
-import { IoEyeSharp } from "react-icons/io5";
+import { IoEyeSharp, IoSettingsOutline } from "react-icons/io5";
 import { FaUsersViewfinder } from "react-icons/fa6";
 import { FaUsersRays } from "react-icons/fa6";
 import { FaSalesforce } from "react-icons/fa";
-import { FcComboChart } from "react-icons/fc";
 
 
 // avatar style
@@ -155,7 +154,12 @@ export default function DashboardDefault() {
       <Grid item xs={12} md={5} lg={4}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Analytics Report</Typography>
+            <Typography variant="h5">Analytics Report &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoSettingsOutline />
+            </Typography>
           </Grid>
           <Grid item />
         </Grid>

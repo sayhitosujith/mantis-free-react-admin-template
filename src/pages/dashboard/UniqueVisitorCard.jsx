@@ -21,7 +21,7 @@ export default function UniqueVisitorCard() {
     <>
       <Grid container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Typography variant="h5"> Unique profiles Updated <FcComboChart size={25} color="black"/>
+          <Typography variant="h5"> Unique profiles Updated &nbsp; <FcComboChart size={25} color="black"/>
           </Typography>
 
         </Grid>

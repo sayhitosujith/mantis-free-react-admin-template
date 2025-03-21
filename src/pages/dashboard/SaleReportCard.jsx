@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { IoMdDownload } from 'react-icons/io';
 
 // project import
 import SalesChart from './SalesChart';
@@ -34,7 +35,9 @@ export default function SaleReportCard() {
     <>
       <Grid container alignItems="center" justifyContent="space-between">
         <Grid item>
-          <Typography variant="h5">Sales Report</Typography>
+          <Typography variant="h5">Sales Report &nbsp;&nbsp;  
+          <IoMdDownload size={24}className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />
+          </Typography>
         </Grid>
         <Grid item>
           <TextField

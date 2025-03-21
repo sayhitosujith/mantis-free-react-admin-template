@@ -143,8 +143,10 @@ export default function DashboardDefault() {
       <Grid item xs={12} md={7} lg={8}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Recent Orders</Typography>
-          </Grid>
+          <Typography variant="h5">Recent Orders &nbsp;&nbsp;  
+          <IoMdDownload size={24}className="absolute top-2 right-2 text-gray-500 cursor-pointer hover:text-gray-700 text-xl" />
+          </Typography>
+        </Grid>
           <Grid item />
         </Grid>
         <MainCard sx={{ mt: 2 }} content={false}>
